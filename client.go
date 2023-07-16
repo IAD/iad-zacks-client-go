@@ -10,7 +10,6 @@ import (
 	"time"
 )
 
-//nolint:lll
 const (
 	baseURL = "https://quote-feed.zacks.com/"
 )

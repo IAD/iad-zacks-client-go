@@ -20,7 +20,7 @@ func TestClient_GetRating(t *testing.T) {
 	require.NoError(t, err)
 	require.Equal(t, ticker, rank.Ticker)
 	require.Contains(t, []string{"1", "2", "3", "4", "5"}, rank.ZacksRank)
-	require.Contains(t, []string{"A", "B", "C", "D", "E"}, rank.ZacksRankText)
+	require.Contains(t, []string{"Strong Buy", "Buy", "Hold", "Sell", "Strong Sell"}, rank.ZacksRankText, rank.Ticker)
 }
 
 func TestClient_GetRatings(t *testing.T) {
